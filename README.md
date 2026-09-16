@@ -46,12 +46,15 @@ Play these as media files, not through TTS. espeak reads "mhmm" as "em
 aitch em em", which is not the effect we were after. See
 [Sounds](docs/sounds.md).
 
-## Source
+## Rebuilding her
 
-[`src/`](src) mirrors the folders above. [`src/voices/`](src/voices) has
-the scripts, the 416-line training script, and the reference clip VIKI's
-voice was cloned from. That last one matters: regenerating from the
-prompt gives you a *similar* voice, not this one.
+`voices/viki/reference.wav` is the clip her voice was cloned from. That
+one matters: regenerating from the prompt gives you a *similar* voice,
+not this one.
+
+The scripts that build a voice from it live in the main VIKI_ repo,
+under [`scripts/`](https://github.com/iamamoose/viki/blob/main/scripts) — they're code, so they sit under that repo's
+Apache-2.0 rather than the CC licence here.
 
 ## Licence
 

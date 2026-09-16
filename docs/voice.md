@@ -24,7 +24,7 @@ You need an NVIDIA GPU — we used a 12GB 3060 and training sits at about
 
 ## 1. Invent a voice
 
-`src/voices/gen_voices.py` turns a written description into candidates:
+[`gen_voices.py`](https://github.com/iamamoose/viki/blob/main/scripts/gen_voices.py) turns a written description into candidates:
 
 ```
 Accent: British English, southern England — distinctly British, never
@@ -41,16 +41,16 @@ territory. If none of them grab you, change the description rather than
 generating more.
 
 VIKI's clip was made before that prompt was last edited, so running it
-now gives you a similar voice, not hers. `src/voices/viki/viki.wav` is
+now gives you a similar voice, not hers. `voices/viki/reference.wav` is
 the actual clip — use that if you want *this* voice.
 
 ## 2. Make the training set
 
-`src/voices/gen_dataset.py` has the reference read every line of
-`metadata.csv`:
+[`gen_dataset.py`](https://github.com/iamamoose/viki/blob/main/scripts/gen_dataset.py) has the reference read every line of
+[`metadata.csv`](https://github.com/iamamoose/viki/blob/main/scripts/metadata.csv):
 
 ```bash
-python gen_dataset.py --voices viki --ref-dir src/voices/viki
+python gen_dataset.py --voices viki --ref-dir <dir with viki.wav>
 ```
 
 Leave it at 24kHz. Piper's tooling derives 22.05k and 16k from whatever
