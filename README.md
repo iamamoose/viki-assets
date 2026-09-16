@@ -45,7 +45,12 @@ Both files go in the same place (`/config/models/` on the ESPHome
 device, say) — the JSON names the `.tflite` beside it. Wiring and
 sensitivity tuning: [Wakeword](https://github.com/iamamoose/viki/blob/main/docs/wakeword.md).
 
-It's trained on two voices in one living room, so it may not hear you.
+Trained with [microWakeWord Trainer
+Studio](https://github.com/TaterTotterson/microWakeWord-Trainer-AppleSilicon)
+by Tater Totterson, on our own recordings — which stay ours; only the
+classifier ships.
+
+It's tuned to two voices in one living room, so it may not hear you.
 [Make your own](https://github.com/iamamoose/viki/blob/main/docs/make-your-own-wakeword.md) if not.
 
 ## Making your own voice
@@ -67,9 +72,10 @@ checkpoint is LJSpeech (public domain), Piper and TextyMcSpeechy are
 MIT, Qwen3-TTS is Apache-2.0, and the voice was invented rather than
 recorded — there's no voice donor in it.
 
-The wakeword is the exception: it's trained on our own recordings of us
-saying "hey Viki". It's a small classifier, not anything that can be
-turned back into speech, and the recordings are ours to license.
+The wakeword is the exception: it's trained on our own recordings, which
+are ours to license. The recordings themselves aren't published — a
+microWakeWord model is a classifier, not anything that can be turned
+back into speech.
 
 ```
 VIKI assets — https://github.com/iamamoose/viki-assets — CC BY-SA 4.0
