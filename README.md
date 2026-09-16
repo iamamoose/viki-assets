@@ -28,9 +28,9 @@ Quick local test:
 echo "Your kettle has boiled." | piper --model en_US-viki-medium.onnx --output_file test.wav
 ```
 
-There's no human voice donor anywhere in this. We wrote a description of
-a voice, Qwen3-TTS made one up, and we trained Piper on it. See
-[Voice](docs/voice.md) for how, and what to avoid.
+There's no human voice donor anywhere in this. We wrote a description
+of a voice, Qwen3-TTS made one up, and we trained Piper on it. Want to
+make your own? [Full recipe](https://github.com/iamamoose/viki/blob/main/docs/make-your-own-voice.md), including what to avoid.
 
 Our original Viki model used Index-TTS2 to clone a voice, and the license
 isn't as permissive, so we've redone it from scratch using Qwen3-TTS instead.
@@ -52,9 +52,9 @@ aitch em em", which is not the effect we were after. See
 one matters: regenerating from the prompt gives you a *similar* voice,
 not this one.
 
-The scripts that build a voice from it live in the main VIKI_ repo,
-under [`scripts/`](https://github.com/iamamoose/viki/blob/main/scripts) — they're code, so they sit under that repo's
-Apache-2.0 rather than the CC licence here.
+The scripts and the walkthrough live in the main VIKI_ repo — see
+[Make your own VIKI_ voice](https://github.com/iamamoose/viki/blob/main/docs/make-your-own-voice.md). They're code, so they sit under that
+repo's Apache-2.0 rather than the CC licence here.
 
 ## Licence
 

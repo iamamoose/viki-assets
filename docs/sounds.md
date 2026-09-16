@@ -34,8 +34,7 @@ the whole problem.
 
 ## How this one was made
 
-Cloned from the same `voices/viki/reference.wav` the voice was trained
-on, so it matches her timbre.
+Cloned from the same `voices/viki/reference.wav` the voice was trained on, so it matches her timbre.
 
 We generated 72 takes across six spellings and twelve seeds, then picked
 the right one!
