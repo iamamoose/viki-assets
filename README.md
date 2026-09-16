@@ -13,11 +13,14 @@ A folder per voice in [`voices/`](voices). Right now there's one:
 
 - **viki** — southern English, early twenties, quick and clipped.
 
-Each holds the Piper config and the noises that voice makes. Grab the
-matching `.onnx` from the release, put it next to the `.json` — same
-folder, same name, Piper finds the config by sticking `.json` on the end
-of the model path.
+Each holds the Piper config and the noises that voice makes — everything
+except the model itself, which is too big for git.
 
+Download `viki-voice-<version>.zip` from the release and unzip it. You
+get the same folder with the `.onnx` filled in, ready to use.
+
+The `.onnx` and `.json` go together — same folder, same name — because
+Piper finds the config by sticking `.json` on the end of the model path.
 For the Home Assistant Piper add-on that's usually `/share/piper/`, then
 restart it. The wavs don't go there; see below.
 
