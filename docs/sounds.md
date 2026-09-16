@@ -34,10 +34,11 @@ the whole problem.
 
 ## How this one was made
 
-Cloned from the same `voices/viki/reference.wav` the voice was trained on, so it matches her timbre.
+Cloned from the same `voices/viki/reference.wav` the voice was trained
+on, so it matches her timbre. We generated 72 takes across six spellings
+and twelve seeds, then picked the right one.
 
-We generated 72 takes across six spellings and twelve seeds, then picked
-the right one!
+Making one for your own voice: [Make your own VIKI_ voice](https://github.com/iamamoose/viki/blob/main/docs/make-your-own-voice.md).
 
 ## Using them
 
@@ -46,10 +47,3 @@ Play as media, not TTS. In Home Assistant that's
 
 Two rates: `mhmm.wav` at 24kHz is the original, `mhmm-22050.wav` matches
 the voice model for players that dislike switching between the two.
-
-## Making more
-
-Same method works for a sigh, a sniff, an "ahem". Clone from the
-reference, generate a few dozen takes across several spellings and
-seeds, and pick by measurement — the spread between seeds is much wider
-than you'd guess, and the first take is almost never the best one.
