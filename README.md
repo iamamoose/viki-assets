@@ -43,8 +43,13 @@ you. They live with the voice because they're cloned from it, so each
 voice needs its own.
 
 Play these as media files, not through TTS. espeak reads "mhmm" as "em
-aitch em em", which is not the effect we were after. See
-[Sounds](docs/sounds.md).
+aitch em em", which is not the effect we were after — in Home Assistant
+that's `media_player.play_media`, not `tts.speak`.
+
+Two rates: `mhmm.wav` at 24kHz is the original, `mhmm-22050.wav` matches
+the voice model for players that dislike switching between the two.
+
+Making one for your own voice: [Make your own VIKI_ voice](https://github.com/iamamoose/viki/blob/main/docs/make-your-own-voice.md).
 
 ## Rebuilding her
 
