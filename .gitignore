@@ -1,0 +1,6 @@
+# The model binary ships via GitHub Releases, not in the repo
+*.onnx
+*.ckpt
+__pycache__/
+*.pyc
+*~
