@@ -1,18 +1,18 @@
 {
-  "dataset": "en_US-viki-medium",
+  "dataset": "en_GB-viki-medium",
   "audio": {
     "sample_rate": 22050,
     "quality": "medium"
   },
   "espeak": {
-    "voice": "en-us"
+    "voice": "en-gb-x-rp"
   },
   "language": {
-    "code": "en_US"
+    "code": "en_GB"
   },
   "inference": {
     "noise_scale": 0.667,
-    "length_scale": 1.5,
+    "length_scale": 1,
     "noise_w": 0.8
   },
   "phoneme_type": "espeak",

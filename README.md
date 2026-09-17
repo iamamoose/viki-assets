@@ -10,7 +10,8 @@ so it ships in [Releases](../../releases/latest).
 
 A folder per voice in [`voices/`](voices). Right now there's one:
 
-- **viki** — default anime judgemental home assistant
+- **viki** — default anime judgemental home assistant. en-GB, so she
+  says "garage" and "tomato" like a Brit.
 
 Download `viki-voice-<version>.zip` from the release and unzip it. You
 get that folder with the `.onnx` filled in.
@@ -20,7 +21,7 @@ add-on that's `/share/piper/`, then restart it. The wavs don't go there;
 see below.
 
 ```bash
-echo "Your kettle has boiled." | piper --model en_US-viki-medium.onnx --output_file test.wav
+echo "Your kettle has boiled." | piper --model en_GB-viki-medium.onnx --output_file test.wav
 ```
 
 ## Sounds
